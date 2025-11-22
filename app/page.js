@@ -16,7 +16,7 @@ export default function Page() {
     <div
       className={`min-h-screen text-white relative overflow-hidden ${manrope.className}`}
       style={{
-        backgroundColor: "#c5a4a4ff",
+        backgroundColor: "#751313ff",
       }}
     >
       <div
