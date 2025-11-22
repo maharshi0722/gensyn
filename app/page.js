@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Manrope } from "next/font/google";
@@ -237,7 +237,7 @@ export default function Page() {
                 className="flex flex-col items-center space-y-3"
               >
                 <a href={x} target="_blank" rel="noopener noreferrer">
-                  <img
+                  <Image
                     src={`/${img}`}
                     alt={name}
                     className="w-28 h-28 rounded-full object-cover border-2 border-gray-700 shadow-lg hover:border-orange-500 transition"
