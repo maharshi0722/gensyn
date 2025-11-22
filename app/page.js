@@ -4,7 +4,6 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Manrope } from "next/font/google";
 
-// ✅ New Font
 const manrope = Manrope({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"],
@@ -17,11 +16,9 @@ export default function Page() {
     <div
       className={`min-h-screen text-white relative overflow-hidden ${manrope.className}`}
       style={{
-        backgroundColor: "#381e13ff",
-      
+        backgroundColor: "#912727ff",
       }}
     >
-      {/* Dark overlay */}
       <div
         className="absolute inset-0 backdrop-blur-sm"
         style={{ backgroundColor: "rgba(27,15,10,0.85)" }}
@@ -66,15 +63,38 @@ export default function Page() {
             </div>
           </div>
 
-        {open && (
-  <div className="md:hidden absolute top-full left-0 w-full bg-[#1B0F0A]/95 backdrop-blur-md px-6 py-4 space-y-4 text-sm text-gray-300 border-t border-gray-800">
-    <a href="#rlswarm" onClick={() => setOpen(false)} className="block hover:text-orange-400">RL Swarm</a>
-    <a href="#blockassist" onClick={() => setOpen(false)} className="block hover:text-orange-400">BlockAssist</a>
-    <a href="#judge" onClick={() => setOpen(false)} className="block hover:text-orange-400">Judge</a>
-    <a href="#codeassist" onClick={() => setOpen(false)} className="block hover:text-orange-400">CodeAssist</a>
-  </div>
-)}
-
+          {open && (
+            <div className="md:hidden absolute top-full left-0 w-full bg-[#1B0F0A]/95 backdrop-blur-md px-6 py-4 space-y-4 text-sm text-gray-300 border-t border-gray-800">
+              <a
+                href="#rlswarm"
+                onClick={() => setOpen(false)}
+                className="block hover:text-orange-400"
+              >
+                RL Swarm
+              </a>
+              <a
+                href="#blockassist"
+                onClick={() => setOpen(false)}
+                className="block hover:text-orange-400"
+              >
+                BlockAssist
+              </a>
+              <a
+                href="#judge"
+                onClick={() => setOpen(false)}
+                className="block hover:text-orange-400"
+              >
+                Judge
+              </a>
+              <a
+                href="#codeassist"
+                onClick={() => setOpen(false)}
+                className="block hover:text-orange-400"
+              >
+                CodeAssist
+              </a>
+            </div>
+          )}
         </nav>
 
         {/* Hero */}
@@ -95,7 +115,7 @@ export default function Page() {
             className="max-w-3xl mx-auto text-gray-400 text-lg"
           >
             A decentralized AI compute network bringing persistent identity,
-            verifiable training, and collaborative intelligence to the world 
+            verifiable training, and collaborative intelligence to the world
             enabling trustless coordination between nodes, models, and humans
             across a global machine intelligence network.
           </motion.p>
@@ -175,6 +195,12 @@ export default function Page() {
                 "Office Manager",
                 "https://x.com/austinvirts",
               ],
+                [
+    "IMG_14.JPG",
+    "Blazy",
+    "Core Team",
+    "https://x.com/blazyeth/",
+  ],
               [
                 "IMG_6.JPG",
                 "Gasoline",
@@ -200,6 +226,24 @@ export default function Page() {
                 "Moderator",
                 "https://x.com/S4Sanjay_das",
               ],
+  [
+    "IMG_11.JPG",
+    "FabsMac",
+    "Moderator",
+    "https://x.com/FabsMac",
+  ],
+  [
+    "IMG_12.JPG",
+    "Samurai Kai",
+    "Moderator",
+    "https://x.com/SamuraiKai1",
+  ],
+  [
+    "IMG_13.JPG",
+    "Kumo",
+    "Moderator",
+    "https://x.com/Kumoooo_co",
+  ],
             ].map(([img, name, role, x], i) => (
               <motion.div
                 key={i}
@@ -250,8 +294,8 @@ export default function Page() {
               Gensyn © 2025 • Decentralized AI Infrastructure
             </div>
 
-            <div>
-              Created by {" "}
+            <div className="text-white">
+              Created by{" "}
               <a
                 href="https://x.com/Maharsh42439943"
                 target="_blank"
@@ -285,7 +329,7 @@ function Phase({ title, description, link, id }) {
           rel="noopener noreferrer"
           className="text-orange-400 text-sm hover:underline"
         >
-          Read More →
+          Full Guide →
         </a>
       )}
     </motion.div>
