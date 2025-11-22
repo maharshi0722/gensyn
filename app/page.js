@@ -16,7 +16,7 @@ export default function Page() {
     <div
       className={`min-h-screen text-white relative overflow-hidden ${manrope.className}`}
       style={{
-        backgroundColor: "#912727ff",
+        backgroundColor: "#821e1eff",
       }}
     >
       <div
@@ -195,12 +195,7 @@ export default function Page() {
                 "Office Manager",
                 "https://x.com/austinvirts",
               ],
-                [
-    "IMG_14.JPG",
-    "Blazy",
-    "Core Team",
-    "https://x.com/blazyeth/",
-  ],
+
               [
                 "IMG_6.JPG",
                 "Gasoline",
@@ -226,24 +221,15 @@ export default function Page() {
                 "Moderator",
                 "https://x.com/S4Sanjay_das",
               ],
-  [
-    "IMG_11.JPG",
-    "FabsMac",
-    "Moderator",
-    "https://x.com/FabsMac",
-  ],
-  [
-    "IMG_12.JPG",
-    "Samurai Kai",
-    "Moderator",
-    "https://x.com/SamuraiKai1",
-  ],
-  [
-    "IMG_13.JPG",
-    "Kumo",
-    "Moderator",
-    "https://x.com/Kumoooo_co",
-  ],
+              ["IMG_11.JPG", "FabsMac", "Moderator", "https://x.com/FabsMac"],
+              [
+                "IMG_12.JPG",
+                "Samurai Kai",
+                "Moderator",
+                "https://x.com/SamuraiKai1",
+              ],
+              ["IMG_13.JPG", "Kumo", "Moderator", "https://x.com/Kumoooo_co"],
+              ["IMG_14.JPG", "Blazy", "Core Team", "https://x.com/blazyeth/"],
             ].map(([img, name, role, x], i) => (
               <motion.div
                 key={i}
