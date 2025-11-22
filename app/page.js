@@ -229,12 +229,7 @@ export default function Page() {
                 "https://x.com/SamuraiKai1",
               ],
               ["kumo.jpg", "Kumo", "Moderator", "https://x.com/Kumoooo_co"],
-                           [
-    "IMG_14.JPG",
-    "Blazy",
-    "Core Team",
-    "https://x.com/blazyeth/",
-  ],
+              ["blazy.jpg", "Blazy", "Core Team", "https://x.com/blazyeth/"],
             ].map(([img, name, role, x], i) => (
               <motion.div
                 key={i}
