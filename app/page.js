@@ -223,12 +223,12 @@ export default function Page() {
               ],
               ["IMG_11.JPG", "FabsMac", "Moderator", "https://x.com/FabsMac"],
               [
-                "IMG_12.JPG",
+                "sam.jpg",
                 "Samurai Kai",
                 "Moderator",
                 "https://x.com/SamuraiKai1",
               ],
-              ["IMG_13.JPG", "Kumo", "Moderator", "https://x.com/Kumoooo_co"],
+              ["kumo.jpg", "Kumo", "Moderator", "https://x.com/Kumoooo_co"],
                            [
     "IMG_14.JPG",
     "Blazy",
